@@ -68,7 +68,7 @@ const gameOver = () => {
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
   const timeTaken = (finishTime - startTime) / 1000;
-  const floorNumber = Math.floor(timeTaken)
+  const floorNumber2 = Math.floor(timeTaken)
   // console.log(floorNumber);
 
 
@@ -83,12 +83,13 @@ const gameOver = () => {
   // show result
   resultModal.innerHTML += `
     <h1>Finished!</h1>
-    <p>You took: <span class="bold">${floorNumber}</span> seconds</p>
+    <p>You took: <span class="bold">${floorNumber2}</span> seconds</p>
     <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
     <button onclick="closeModal()">Close</button>
   `;
 
-  addHistory(questionText, floorNumber, errorCount);
+  addHistory(questionText, floorNumber2, errorCount);
+
 
   // restart everything
   startTime = null;

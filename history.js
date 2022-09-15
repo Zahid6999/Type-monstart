@@ -1,6 +1,7 @@
 const histories = document.getElementById("histories");
 
 function addHistory(questionText, timeTaken, errorCount) {
+ 
   const newRow = document.createElement("div");
   newRow.classList.add("card");
   
@@ -18,6 +19,7 @@ function addHistory(questionText, timeTaken, errorCount) {
   let previousTests = JSON.parse(localStorage.getItem("testHistory")) || [];
   previousTests.push({ questionText, timeTaken, errorCount });
   localStorage.setItem("testHistory", JSON.stringify(previousTests));
+ 
 
   displayHistory();
 }
