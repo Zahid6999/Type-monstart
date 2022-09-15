@@ -192,6 +192,14 @@ button {
     padding: 10px 20px;
     width: 100%;
   }
+  .buttons {
+    display: block;
+    margin: 40px;
+    
+  }
+  #starts{
+    margin-bottom: 15px;
+  }
 
   .card {
     flex-direction: column;
