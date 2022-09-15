@@ -181,16 +181,19 @@ button {
   top: 0;
 }
 
-@media only screen and (max-width: 700px) {
+/* Mobile devise */
+@media only screen and (max-width: 500px) {
   .box-container {
-    padding: 0 20px;
+    padding: 10px 20px;
     width: 100%;
   }
+
   .card {
     flex-direction: column;
+   
   }
+  .card p {
+    padding-top: 30px;
+    }
 };
 
-@media only screen and (min-width:400px) {
-   
-}
